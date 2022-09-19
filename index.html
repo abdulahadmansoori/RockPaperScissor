@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor Game</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header class="navbar">
+        <h1 class="game_name">RockPaperScissor</h1>
+    </header>
+    <div class="players">
+        <h6 class="player">User: <span id="UWC">0</span></h6>
+        <h6 class="player right">Computer: <span id="CWC">0</span></h6>
+    </div>
+    <div class="choice" id="choiceCont">
+        <p class="decision_heading">Make Your Decision</p>
+        
+        <h4 class="decision" id="Rock" onclick="game('Rock')"><img src="./icons/rock_u.png" alt="" class="options_img">Rock</h4>
+        
+        <h4 class="decision" id="Paper" onclick="game('Paper')"><img src="./icons/paper_u.png" alt="" class="options_img">Paper</h4>
+        
+        <h4 class="decision" id="Scissor" onclick="game('Scissor')"><img src="./icons/scissor_u.png" alt="" class="options_img">Scissor</h4>
+    </div>
+    <div class="game_progress" id="game_progress">
+
+        <div class="cantainer">
+            <div class="display_result user_result">
+                <img src="" alt="" class="result_img" id="user_result">
+                <h3 class="display_choise_name">User</h3>
+            </div>
+            <div class="display_result computer_result">
+                <img src="" alt="" class="result_img" id="computer_result">
+                <h3 class="display_choise_name">Computer</h3>
+            </div>
+        </div>
+        <p class="greet" id="greet">WOO WOO WOO</p>
+        <h5 class="play_again_btn" onclick="hideShow('choiceCont'); showHide('game_progress');">Play Again!</h5>
+    </div>
+    <footer class="footer"><a id="grapnerslink" href="https://m.facebook.com/grapners/" target="_blank">Grapners</a></footer>
+    <script src="./app.js"></script>
+</body>
+
+</html>

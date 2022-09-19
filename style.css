@@ -1,0 +1,113 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+
+}
+.navbar{
+    width: 100%;
+    background: #007fff;
+}
+.game_name{
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    padding: 0.5% 1%;
+}
+.players{
+    display: flex;
+    background-color: #eaeaea;
+}
+.player{
+    font-weight: 500;
+    font-size: 1rem;
+    flex: 50%;
+    padding: 1% 2%;
+}
+.right{
+    text-align: right;
+}
+.cantainer{
+    display: flex;
+}
+.display_result{
+    background: rgb(241, 239, 239);
+    width: 45%;
+    flex: 50%;
+    text-align: center;
+    border: 1px solid rgb(221, 221, 221);
+    font-size: 1.5rem;
+    padding: 1%;
+}
+.decision_heading{
+    font-size: 1.5rem;
+}
+.choice{
+    width: 60%;
+    background: rgb(255, 255, 255);
+    margin: auto;
+    text-align: center;
+    margin-top: 30%;
+}
+.options_img{
+    width: 10%;
+    box-sizing: inline-block;
+    padding: 0% 1%;
+}
+.decision{
+    padding: 1% 2%;
+    background: #5678ff;
+    font-size: 1.5rem;
+    color: hsl(0, 0%, 100%);
+    margin: 1%;
+}
+.result_img{
+    width: 100%;
+}
+.game_progress{
+    display: none;
+    margin: auto;
+    margin-top: 15%;
+    width: 60%;
+}
+.display_choise_name{
+    font-size: 1rem;
+}
+.greet{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding: 1% 0%;
+}
+.play_again_btn{
+    text-align: center;
+    margin: auto;
+    width: 30%;
+    margin-top: 5%;
+    background-color: rgb(229, 223, 215);
+    padding: 2% 0%;
+}
+.footer{
+    background: #003f7e;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 1% 2%;
+    position:fixed;
+    bottom:0%;
+    width: 100%;
+    direction: none;
+}
+#grapnerslink{
+    color: #ffffff;
+    text-decoration: none;
+}
+@media only screen and (min-width: 1000px) {
+    .game_progress{
+        margin-top: 5%;
+    }
+    .choice{
+        margin-top: 5%;
+    }
+    .result_img{
+        width: 50%;
+    }
+  }
